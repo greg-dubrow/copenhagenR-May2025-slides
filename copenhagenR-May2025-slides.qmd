@@ -444,11 +444,19 @@ Inspired - Packages with API wrappers and functions
 <h2>
 -   [Danmarks Statistik StatBank](#statbank)
 
+</h2>
+
 <br>
+
+<h2>
 
 -   [Get data via a package](#danstat)
 
+</h2>
+
 <br>
+
+<h2>
 
 -   [Clean & visualize the data](#datawork)
 
