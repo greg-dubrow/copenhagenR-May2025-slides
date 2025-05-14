@@ -1,0 +1,532 @@
+---
+# title: "Social Science Data Analysis in r"
+# author: "Gregers Kjerulf Dubrow"
+format: 
+  revealjs:
+    theme: [default, custom.scss]
+    center-title-slide: false
+    # title-slide-attributes:
+    #   data-background-image: "bike_dragor.jpeg"
+    #   data-background-size: contain
+    slide-number: c/t
+    code-link: true
+    code-overflow: wrap
+    code-block-height: 1500px
+    code-line-numbers: false
+    height: 1080
+    width: 1920
+editor: source
+---
+
+## 
+
+````{=html}
+<!---makes code chunk font larger
+```{css echo=FALSE}
+.big-code{
+  font-size: 125%  
+}
+```
+--->
+````
+
+<center>
+
+<h1>Social Science Data Analysis in r</h1>
+<h2>Why -> Where -> How -> What -> Who</h2>
+</center>
+
+<br> <br> <br> <br>
+
+<h2>Gregers Kjerulf Dubrow</h2>
+
+<br>
+
+<h3>CopenhagenR</h3>
+
+<br>
+
+<h3>14 May, 2025</h3>
+
+![](images/cphr_talk_2.png){.absolute top=260 left=710 width="60%"}
+
+
+## 
+
+<center>
+
+<h1>Social Science Data Analysis in r</h1>
+
+</center>
+
+<br>
+<h2>The plan for this evening</h2>
+
+
+::: {.incremental}
+
+-   [Why a talk about social science data analysis?](#why)
+    -   Social science is the root of data analysis & visualization 
+
+-   [Where can I find data?](#where)
+    -   There's more to it than csv downloads
+
+-   [How do I analyse data and report what I find?](#how)
+    -   It's easier than ever to do the work and share it
+
+-   [What does it mean in the current context?](#what)
+    -   Job market, ML, AI, business, government, research
+
+-   [Who has thoughts or questions?](#who)
+
+
+:::
+
+![](images/prompt14_2025_sankey.png){.absolute top=260 left=1050 width="45%"}
+
+##
+
+
+<center>
+<h2>Why a talk on social sciences data analysis?</h2>
+</center>
+
+<br><br>
+
+::: {.incremental}
+
+<h3>
+-   It's who I am
+    -   Ph.D. in education policy, training in social science quantitative & qualitative methods
+    -   Fifteen years as a data analyst reporting on college admissions & student success
+
+-   There is plenty of data available
+    -   I'm also a teacher, so I want to inform and help other analysts to do good work
+
+</h3>
+:::
+
+##
+
+<center>
+
+<h2>Why a talk on social sciences data analysis?</h2>
+
+</center>
+
+<br>
+
+:::{style="text-align:center;"  .fragment}
+
+<h2>
+![There's more to it than Minard...](images/Minard.png){width="90%}
+</h2>
+
+:::
+
+
+##
+
+<center>
+<h2>Why a talk on social sciences data analysis?</h2>
+...social sciences shaped the data analysis & visualization fields
+</center>
+
+
+::: columns 
+::: {.column width="55%" .fragment}
+:::{style="text-align:center;"}
+
+![WEB DuBois infographics from Paris Expo](images/dubois-infographics.jpg){width="78%"}
+:::
+
+
+:::{style="text-align:center;"  .fragment}
+![Florence Nightingale rose plot](images/nighingale_rose.jpg){width="68%"}
+:::
+:::
+
+
+::: {.column width="45%" .fragment}
+:::{style="text-align:center;"}
+
+<br>
+<br>
+
+![John Snow cholera map](images/Snow-cholera-map-1.jpg){width="80%"}
+:::
+:::
+:::
+
+##
+
+<center>
+
+<h2>Where can I find data?</h2>
+
+</center>
+
+Way back when *(late 1990s -> early 2000s)*
+
+::: {layout="[[1,1], [1]]" style="text-align:center;" .fragment}
+
+
+![gopher, telnet, ftp](images/gopher_telnet_ftp.jpg){width="65%"}
+
+:::{style="text-align:center;"  .fragment}
+![WebCASPAR](images/webcaspar.png)
+:::
+:::
+
+
+##
+
+<center>
+
+<h2>Where can I find data now?</h2>
+
+</center>
+
+<br><br><br>
+
+::: {layout="[[1,1], [1]]" style="text-align:center;" .fragment}
+
+
+![Tired - csv downloads](images/whr_csv_download.png){width="90%"}
+
+:::{style="text-align:center;"  .fragment}
+![Wired - APIs](images/oecd_api.png){width="90%"}
+
+:::
+:::
+
+##
+
+<center>
+
+<h2>Where can I find data now?</h2>
+
+</center>
+
+Inspired - Packages with API wrappers and functions
+
+::: {layout="[[1,1], [1]]" style="text-align:center;" .fragment}
+
+
+![ropengov.org/projects/](images/ropengov_webpage.png){width="90%"}
+
+:::{style="text-align:center;"  .fragment}
+![r311 cities](images/ropengov_311_cities.png){width="70%"}
+:::
+:::
+
+
+##
+
+<center>
+
+<h2>Where can I find data now?</h2>
+
+</center>
+
+Inspired - Packages with API wrappers and functions
+
+::: columns 
+::: {.column width="55%" .fragment}
+:::{style="text-align:center;"}
+
+![github.com/expersso/OECD](images/roecd.png){width="65%"}
+
+:::
+
+
+:::{style="text-align:center;"  .fragment}
+![docs.ropensci.org/essurvey/](images/essurvey.png){width="65%"}
+:::
+:::
+
+
+::: {.column width="45%" .fragment}
+
+:::{style="text-align:center;"}
+![urbaninstitute.github.io/education-data-package-r/](images/urbaninst.png){width="90%"}
+:::
+
+<br>
+
+:::{style="text-align:center;"  .fragment}
+![ilostat.github.io/Rilostat/](images/rilostat.png){width="90%"}
+
+:::
+:::
+
+:::
+
+
+
+
+
+##
+
+<center>
+
+<h2>Where can I find data now?</h2>
+
+</center>
+
+Inspired - Packages with API wrappers and functions
+
+::: columns 
+::: {.column width="55%" .fragment}
+:::{style="text-align:center;"}
+
+![walker-data.com/tidycensus/D](images/tidycensus.png){width="65%"}
+:::
+
+
+:::{style="text-align:center;"  .fragment}
+![www.hrecht.com/censusapi/](images/censusapi.png){width="65%"}
+:::
+:::
+
+
+
+::: {.column width="45%" .fragment}
+:::{style="text-align:center;"}
+
+
+![tech.popdata.org/ipumsr/](images/ipumsr.png){width="90%"}
+:::
+:::
+:::
+
+
+##
+
+<center>
+
+<h2>A quick note of caution</h2>
+
+</center>
+
+<br>
+<h3>Nothing lasts forever</h3>
+
+<br>
+
+::: {.incremental}
+
+-   [API links can change](#change)
+    -   Your scripts or automations may stop working 
+
+
+-   [Packages need maintenance](#packages)
+    -   No updates mean broken scripts or automations
+
+
+-   [API endpoints can be shut down](#apiends)
+    -   Spotify :(
+
+:::
+
+:::{.fragment}
+
+![](images/spotify403error.png){.absolute top=160 left=1050 width="45%"}
+
+:::
+
+::: {.incremental}
+
+-   [Loss of funding](#layoffs)
+    -   Government, NGOs <br> (story from Inside Higher Ed on NCES layoffs)
+
+
+:::
+
+
+:::{.fragment}
+
+![](images/ihe_nces.png){.absolute top=500 left=1150 width="35%"}
+
+:::
+
+
+##
+
+<center>
+<h2>How do I analyze & visualize data and share my work?<h2>
+</center>
+
+
+:::{.fragment}
+
+![](images/r_shiny.jpg){.absolute top=110 left=270 width="25%"}
+:::
+
+
+:::{.fragment}
+
+![](images/quarto2.jpg){.absolute top=317 left=270 width="23%"}
+
+:::
+
+
+:::{.fragment}
+
+![](images/python_streamlit.jpg){.absolute top=560 left=270 width="23%"}
+
+:::
+
+
+:::{.fragment}
+
+![](images/tableau1.jpg){.absolute top=110 left=840 width="41%"}
+
+:::
+
+
+:::{.fragment}
+
+![](images/power_bi.jpg){.absolute top=330 left=840 width="20%"}
+
+:::
+
+
+:::{.fragment}
+
+
+![](images/d3.jpg){.absolute top=330 left=1245 width="20%"}
+
+:::
+
+
+:::{.fragment}
+
+
+![](images/datawrapper.jpg){.absolute top=800 left=270 width="25%"}
+
+
+:::
+
+
+:::{.fragment}
+
+![](images/datawRappr.png){.absolute top=770 left=890 width="15%"}
+
+:::
+
+
+:::{.fragment}
+
+![](images/observable.png){.absolute top=1010 left=270 width="25%"}
+
+:::
+
+
+:::{.fragment}
+
+![](images/observable_quarto.png){.absolute top=790 left=1230 width="20%"}
+
+:::
+
+
+
+##
+
+<center>
+<h2>Live coding demo<h2>
+</center>
+
+<br>
+
+::: {.incremental}
+
+<h2>
+-   [Danmarks Statistik StatBank](#statbank)
+
+<br>
+
+-   [Get data via a package](#danstat)
+
+<br>
+
+-   [Clean & visualize the data](#datawork)
+
+</h2>
+
+:::
+
+::: {.fragment}
+
+![](images/gdio_30day.png){.absolute top=160 left=950 width="45%"}
+
+:::
+
+
+##
+
+<center>
+
+<h2> What does it all mean in the current context? </h2>
+
+</center>
+
+::: {.incremental}
+
+
+-   [Data science/data analyst/BI analyst labor market](#jobs)
+    -   It's how we were trained, but it's not all we can do
+    -   Machine learning & AI are built on core statistics like regression
+
+
+-   [Transferable skills & how to demonstrate them](#skills)
+    -   Curiosity
+    -   Adaptability
+    -   Willingness to keep learning
+
+
+-   [What can you offer](#value)
+    -   Insights that help the company or organization
+    -   Contribute to the data community 
+        - read & support data blogs
+        - post your own work, help others master skills or gain insights
+        - write packages if you have mastered an API
+        - attend meetups like this, support presenters, do your own presentations
+
+
+:::
+
+
+## 
+
+<center><h1> What thoughts or questions do you have? </h1></center>
+
+
+::: {.absolute top="200" left="500"}
+![](images/potato_nugget_chair.jpg){width="65%" fig-alt="a tuxedo cat and a grey tabby sit under a ddining table waiting for food"}
+:::
+
+```{r, echo = FALSE}
+fontawesome::fa_html_dependency()
+```
+
+## 
+
+<br>
+<h1>Thank you!</h1>
+
+<br>
+
+<h2> `r fontawesome::fa("laptop")`		https://www.gregdubrow.io/ </h2>
+<br>
+<h2> `r fontawesome::fa("github")`		https://github.com/greg-dubrow </h2>
+<br>
+<h2> `r fontawesome::fa("linkedin")`	https://www.linkedin.com/in/dubrowg/ </h2>
+<br>
+<h2> `r fontawesome::fa("bluesky")`		https://bsky.app/profile/gregerskjerulf.bsky.social </h2>
+<br>
+<h2> `r fontawesome::fa("laptop")`		https://public.tableau.com/app/profile/greg.d6950/vizzes </h2>
+<br>
+
+*ps - I'm available for freelance / contract data analysis & visualization projects, teaching, tutoring...*
+

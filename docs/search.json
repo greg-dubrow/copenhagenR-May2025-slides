@@ -1,0 +1,114 @@
+[
+  {
+    "objectID": "copenhagenR-May2025-slides.html#section",
+    "href": "copenhagenR-May2025-slides.html#section",
+    "title": "copenhagenR-May2025-slides",
+    "section": "",
+    "text": "Social Science Data Analysis in r\n\n\nWhy -&gt; Where -&gt; How -&gt; What -&gt; Who\n\n\n\n\nGregers Kjerulf Dubrow\n\n\n\nCopenhagenR\n\n\n\n14 May, 2025"
+  },
+  {
+    "objectID": "copenhagenR-May2025-slides.html#section-1",
+    "href": "copenhagenR-May2025-slides.html#section-1",
+    "title": "copenhagenR-May2025-slides",
+    "section": "",
+    "text": "Social Science Data Analysis in r\n\n\n\nThe plan for this evening\n\n\n\n\nWhy a talk about social science data analysis?\n\nSocial science is the root of data analysis & visualization\n\n\n\nWhere can I find data?\n\nThere’s more to it than csv downloads\n\n\n\nHow do I analyse data and report what I find?\n\nIt’s easier than ever to do the work and share it\n\n\n\nWhat does it mean in the current context?\n\nJob market, ML, AI, business, government, research\n\n\nWho has thoughts or questions?"
+  },
+  {
+    "objectID": "copenhagenR-May2025-slides.html#section-2",
+    "href": "copenhagenR-May2025-slides.html#section-2",
+    "title": "copenhagenR-May2025-slides",
+    "section": "",
+    "text": "Why a talk on social sciences data analysis?\n\n\n\n\n\n\nIt’s who I am\n\nPh.D. in education policy, training in social science quantitative & qualitative methods\nFifteen years as a data analyst reporting on college admissions & student success\n\n\nThere is plenty of data available\n\nI’m also a teacher, so I want to inform and help other analysts to do good work"
+  },
+  {
+    "objectID": "copenhagenR-May2025-slides.html#section-3",
+    "href": "copenhagenR-May2025-slides.html#section-3",
+    "title": "copenhagenR-May2025-slides",
+    "section": "",
+    "text": "Why a talk on social sciences data analysis?\n\n\n\n\n\n\n\nThere’s more to it than Minard…"
+  },
+  {
+    "objectID": "copenhagenR-May2025-slides.html#section-4",
+    "href": "copenhagenR-May2025-slides.html#section-4",
+    "title": "copenhagenR-May2025-slides",
+    "section": "",
+    "text": "Why a talk on social sciences data analysis?\n\n…social sciences shaped the data analysis & visualization fields\n\n\n\n\n\n\nWEB DuBois infographics from Paris Expo\n\n\n\n\n\nFlorence Nightingale rose plot\n\n\n\n\n\n\n\nJohn Snow cholera map"
+  },
+  {
+    "objectID": "copenhagenR-May2025-slides.html#section-5",
+    "href": "copenhagenR-May2025-slides.html#section-5",
+    "title": "copenhagenR-May2025-slides",
+    "section": "",
+    "text": "Where can I find data?\n\n\nWay back when (late 1990s -&gt; early 2000s)\n\n\n\n\n\n\n\n\ngopher, telnet, ftp\n\n\n\n\n\nWebCASPAR"
+  },
+  {
+    "objectID": "copenhagenR-May2025-slides.html#section-6",
+    "href": "copenhagenR-May2025-slides.html#section-6",
+    "title": "copenhagenR-May2025-slides",
+    "section": "",
+    "text": "Where can I find data now?\n\n\n\n\n\n\n\n\n\n\n\nTired - csv downloads\n\n\n\n\n\nWired - APIs"
+  },
+  {
+    "objectID": "copenhagenR-May2025-slides.html#section-7",
+    "href": "copenhagenR-May2025-slides.html#section-7",
+    "title": "copenhagenR-May2025-slides",
+    "section": "",
+    "text": "Where can I find data now?\n\n\nInspired - Packages with API wrappers and functions\n\n\n\n\n\n\n\n\nropengov.org/projects/\n\n\n\n\n\nr311 cities"
+  },
+  {
+    "objectID": "copenhagenR-May2025-slides.html#section-8",
+    "href": "copenhagenR-May2025-slides.html#section-8",
+    "title": "copenhagenR-May2025-slides",
+    "section": "",
+    "text": "Where can I find data now?\n\n\nInspired - Packages with API wrappers and functions\n\n\n\n\n\ngithub.com/expersso/OECD\n\n\n\n\n\ndocs.ropensci.org/essurvey/\n\n\n\n\n\n\nurbaninstitute.github.io/education-data-package-r/\n\n\n\n\n\n\nilostat.github.io/Rilostat/"
+  },
+  {
+    "objectID": "copenhagenR-May2025-slides.html#section-9",
+    "href": "copenhagenR-May2025-slides.html#section-9",
+    "title": "copenhagenR-May2025-slides",
+    "section": "",
+    "text": "Where can I find data now?\n\n\nInspired - Packages with API wrappers and functions\n\n\n\n\n\nwalker-data.com/tidycensus/D\n\n\n\n\n\nwww.hrecht.com/censusapi/\n\n\n\n\n\n\ntech.popdata.org/ipumsr/"
+  },
+  {
+    "objectID": "copenhagenR-May2025-slides.html#section-10",
+    "href": "copenhagenR-May2025-slides.html#section-10",
+    "title": "copenhagenR-May2025-slides",
+    "section": "",
+    "text": "A quick note of caution\n\n\n\nNothing lasts forever\n\n\n\n\n\nAPI links can change\n\nYour scripts or automations may stop working\n\n\n\nPackages need maintenance\n\nNo updates mean broken scripts or automations\n\n\n\nAPI endpoints can be shut down\n\nSpotify :(\n\n\n\n\n\n\n\n\n\n\nLoss of funding\n\nGovernment, NGOs  (story from Inside Higher Ed on NCES layoffs)"
+  },
+  {
+    "objectID": "copenhagenR-May2025-slides.html#section-11",
+    "href": "copenhagenR-May2025-slides.html#section-11",
+    "title": "copenhagenR-May2025-slides",
+    "section": "",
+    "text": "How do I analyze & visualize data and share my work?"
+  },
+  {
+    "objectID": "copenhagenR-May2025-slides.html#section-12",
+    "href": "copenhagenR-May2025-slides.html#section-12",
+    "title": "copenhagenR-May2025-slides",
+    "section": "",
+    "text": "Live coding demo\n\n\n\n\n\n\n\n\nDanmarks Statistik StatBank\n\n\n\n\nGet data via a package\n\n\n\nClean & visualize the data"
+  },
+  {
+    "objectID": "copenhagenR-May2025-slides.html#section-13",
+    "href": "copenhagenR-May2025-slides.html#section-13",
+    "title": "copenhagenR-May2025-slides",
+    "section": "",
+    "text": "What does it all mean in the current context?\n\n\n\n\n\nData science/data analyst/BI analyst labor market\n\nIt’s how we were trained, but it’s not all we can do\nMachine learning & AI are built on core statistics like regression\n\n\n\nTransferable skills & how to demonstrate them\n\nCuriosity\nAdaptability\nWillingness to keep learning\n\n\n\nWhat can you offer\n\nInsights that help the company or organization\nContribute to the data community\n\nread & support data blogs\npost your own work, help others master skills or gain insights\nwrite packages if you have mastered an API\nattend meetups like this, support presenters, do your own presentations"
+  },
+  {
+    "objectID": "copenhagenR-May2025-slides.html#section-14",
+    "href": "copenhagenR-May2025-slides.html#section-14",
+    "title": "copenhagenR-May2025-slides",
+    "section": "",
+    "text": "What thoughts or questions do you have?"
+  },
+  {
+    "objectID": "copenhagenR-May2025-slides.html#section-15",
+    "href": "copenhagenR-May2025-slides.html#section-15",
+    "title": "copenhagenR-May2025-slides",
+    "section": "",
+    "text": "Thank you!\n\n\n\n https://www.gregdubrow.io/\n\n\n https://github.com/greg-dubrow\n\n\n https://www.linkedin.com/in/dubrowg/\n\n\n https://bsky.app/profile/gregerskjerulf.bsky.social\n\n\n https://public.tableau.com/app/profile/greg.d6950/vizzes\n\n\nps - I’m available for freelance / contract data analysis & visualization projects, teaching, tutoring…"
+  }
+]
